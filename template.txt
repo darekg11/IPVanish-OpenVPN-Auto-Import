@@ -1,0 +1,9 @@
+
+dhcp-option DOMAIN-ROUTE .
+
+script-security 2
+setenv PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+up /etc/openvpn/update-systemd-resolved
+up-restart
+down /etc/openvpn/update-systemd-resolved
+down-pre
