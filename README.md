@@ -19,7 +19,7 @@ If you do not need to import all of configs, just remove the ones you do not nee
 Because of that first time connection to any of imported VPNs will prompt for your IPVanish password, after that it will work without password for every next connection.  
 **If anybody have idea for this, please do Pull Request or write an issue**
 
-**Fixing IP Leak on Ubuntu 18.04:**  
+**Fixing DNS Leak on Ubuntu 18.04:**  
 1. Do everything as told in: https://github.com/jonathanio/update-systemd-resolved
 2. Connect to your VPN via: `sudo openvpn --config ipvanish-NL-Amsterdam-ams-a04.ovpn`
 3. In new terminal execute: `systemd-resolve --status`
